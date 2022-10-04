@@ -1,8 +1,14 @@
 import React from 'react';
 import './GameBlock.css';
 
-export default function GameBlock() {
+export default function GameBlock({ block }) {
+
+
+  const handleClick = () => {
+    console.log(`${block.position} is clicked`);
+  };
+
   return (
-    <div className='gameblock'>GameBlock</div>
+    <button className='gameblock' onClick={handleClick} >GameBlock</button>
   );
 }

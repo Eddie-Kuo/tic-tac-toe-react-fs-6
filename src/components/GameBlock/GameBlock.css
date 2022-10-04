@@ -2,4 +2,7 @@
     border: 1px solid black;
     height: 22vh;
     width: 22vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
