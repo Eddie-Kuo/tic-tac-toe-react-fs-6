@@ -20,7 +20,7 @@ const GameProvider = ({ children }) => {
     if (board[index] === '') {
       setBoard(prevState => prevState.map((empty, ind) => ind === index ? currentPlayer : empty));
       setCurrentPlayer(prevPlayer => prevPlayer === 'X' ? 'O' : 'X');
-      setGameMessage(`Your turn ${currentPlayer}`);
+      setGameMessage(`Your turn ${currentPlayer === 'X' ? 'O' : 'X'}`);
     }
   };
 
