@@ -4,11 +4,11 @@ import './GameBlock.css';
 
 export default function GameBlock({ block, index }) {
 
-  const { setTurn, board } = useGameContext();
+  const { setTurn, winCheck } = useGameContext();
   const handleClick = () => {
     setTurn(index);
-    console.log('index', index);
-    console.log('index 2', board[2]);
+    // console.log('index', index);
+    // console.log('index 2', board[2]);
   };
 
   return (
