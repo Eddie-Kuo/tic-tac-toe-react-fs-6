@@ -4,7 +4,7 @@ import './GameBlock.css';
 
 export default function GameBlock({ block, index }) {
 
-  const { setTurn, winCheck } = useGameContext();
+  const { setTurn } = useGameContext();
   const handleClick = () => {
     setTurn(index);
     // console.log('index', index);
