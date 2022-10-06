@@ -106,6 +106,9 @@ const GameProvider = ({ children }) => {
 
   const resetGame = () => {
     setBoard(Array(9).fill(''));
+    setActive(true);
+    setCurrentPlayer('X');
+    setGameMessage('Your turn X');
   };
 
   // map out all the win conditions in an array or arrays?
